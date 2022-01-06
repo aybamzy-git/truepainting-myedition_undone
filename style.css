@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0; 
+}
+html, body{
+  margin: 0;
+  padding: 0;  
+  scroll-behavior: smooth;
+}
+img{
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  pointer-events: none;
+}
+.site-hero{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url('site-hero-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header{
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.site-hero span{
+  width: auto;
+  height: 100%;
+}
+.site-hero span img{
+  pointer-events: none;
+  object-fit: cover;
+}
+.links{
+  display: flex;
+}
+.links li{
+  list-style: none;
+  margin: auto 40px;
+}
+.links li a{
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: #604300;
+  font-weight: 500;
+}
+.hero-name{
+  float: right;
+  text-align: right;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.text-wrap{
+  padding: 0 40px;
+  color: #454655;
+}
+.text-wrap h1{
+  font-size: 5vw;
+  font-weight: bold;
+}
+.text-wrap h2{
+  font-size: 2vw;
+  font-weight: 500;
+}
+.text-wrap .brown{
+  color: #604300;
+}
+.social-media{
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+.social-media ul{
+  display: flex;
+}
+.social-media ul li{
+  list-style: none;
+  margin: 10px 50px;
+}
+.services{
+  width: 100%;
+  background: #454655;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+.orange-painting{
+  position: relative;
+  width: 55%;
+  background: url('painting1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.orange-painting h3{
+  padding: 0 20px;
+  color: #C34511;
+  font-weight: 700;
+  font-size: 11vw;
+  text-decoration: 2px solid #C34511 underline;
+  text-underline-offset: 7px;
+}
+.info-wrap{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: right;
+  color: #E5E5E5;
+  padding-right: 40px;
+  padding-left: 10px;
+}
+.info{
+  margin: 40px 0;
+}
+.info h4{
+  font-size: 4vw;
+  font-weight: normal;
+  margin: 15px 0;
+}
+.info p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2vw;
+  line-height: 3vw;
+  letter-spacing: 0.01rem;
+}
+.team{
+  height: auto;
+  padding: 50px;
+  width: 100%;
+  background: #000000a3;
+  position: relative;
+}
+.team-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(tim-mossholder-zs-PAgqgenQ-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+.team-title{
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.team-title h2{
+  font-size: 11vw;
+}
+.member-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  padding: 40px;
+}
+.member{
+  width: 300px;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 50px;
+}
+.image{
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  border-top-left-radius: 100px;
+}
+.member:nth-child(1) .image{
+  background: url(aiony-haust-3TLl_97HNJo-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.member:nth-child(2) .image{
+  background: url(ian-dooley-d1UPkiFd04A-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.member:nth-child(3) .image{
+  background: url(ayo-ogunseinde-sibVwORYqs0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.member:nth-child(4) .image{
+  background: url(ayo-ogunseinde-6W4F62sN_yI-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.member:nth-child(5) .image{
+  background: url(elizeu-dias-2EGNqazbAMk-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.member:nth-child(6) .image{
+  background: url(albert-dera-ILip77SbmOE-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.name-role{
+  height: 20%;
+  background: #794D25;
+  color: #fff;
+  padding: 10px;
+  border-bottom-right-radius: 100px;
+}
+.name-role h4{
+  font-size: 27px;
+  font-weight: normal;
+}
+.name-role h5{
+  font-size: 19px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: normal;
+}
+.paintings{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #A9AABC;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.paintings h2{
+  font-size: 10vw;
+  color: #fff;
+  text-align: center;
+  z-index: 5;
+}
+.p1{
+  position: absolute;
+  width: 519px;
+  height: 859px;
+  left: 0px;
+  top: 154px;
+}
+.p2{
+  position: absolute;
+  width: 681px;
+  height: 889px;
+  right: 0px;
+  top: 515px;
+}
+.paintings-grid{
+  display: grid;
+  grid: repeat(37, 75px)/ repeat(12, 105px);
+  grid-gap: 10px;
+  justify-content: space-around;
+  align-content: center;
+}
+.r1{
+  background: url(jene-stephaniuk--MCrF6hnojU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: 2 / 2 / 8 / 6;
+}
+.r2{
+  background: url(henrik-donnestad-t2Sai-AqIpI-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: 3 / 7 / 9 / 12;
+}
+.r3{
+  background: url(robert-keane-rlbG0p_nQOU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: 10 / 2 / 16 / 6 ;
+}
+.r4{
+  background: url(markus-spiske-k0rVudBoB4c-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: 11 / 7 / 21 / 12 ;
+}
+.r5{
+  background: url(scott-rodgerson-NWJOf03vXKQ-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: 17 / 2 / 26 / 6;
+}
+.r6{
+  background: url(alice-donovan-rouse-yu68fUQDvOI-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: 22 / 7 / 27 / 12;
+}
+.r7{
+  background: url(dimitar-belchev-fRBpWLAcWIY-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: 28 / 2 / 36 / 12;
+}
+.contact{
+  min-height: 100vh;
+  width: 100%;
+  background: #000000a3;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.contact-bg{
+  width: 100%;
+  height: 100%;
+  background: url(a-o-GfQEdpIkkuw-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.contact-links{
+  width: 100%;
+  z-index: 10;
+}
+.contact-links ul{
+  width: 100%;
+  text-align: right;
+  padding: 30px;
+}
+.contact-links li{
+  list-style: none;
+}
+.contact-links li a{
+  text-decoration: none;
+  font-size: 4vw;
+  font-weight: bold;
+  color: #fff;
+}
+.contact-text{
+  width: 100%;
+  padding: 0 50px;
+  z-index: 10;
+}
+.contact-text h2{
+  font-size: 8vw;
+}
+.contact-text h3{
+  font-size: 5vw;
+}
+.copyright{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+.cp-links{
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+.cp-links ul{
+  display: flex;
+  padding: 20px;
+}
+.cp-links ul li{
+  list-style: none;
+  margin: 0 60px;
+}
+.cp-links ul li:nth-child(3){
+  margin-top: 6px;
+}
+.cp-text{
+  width: auto;
+  padding: 20px;
+  text-align: right;
+}
+.cp-text h4{
+  font-size: 64px;
+}
+.cp-text h5{
+  font-size: 32px;
+}
+.cp-text a{
+  color: #fff;
+}
+@media (max-width: 560px){
+  .contact-links li a{
+    font-size: 7vw;
+  }
+}
